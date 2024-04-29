@@ -1,0 +1,42 @@
+body {
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-container {
+    position: relative;
+    display: inline-block;
+    text-decoration: solid;
+}
+
+.menu-btn, .home {
+    background-color: white;
+    color: black;
+    font-weight: 400;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-decoration: solid;
+}
+
+.menu {
+    background-color: white;
+    display: none;
+    position: absolute;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    border-bottom: 1px solid #91c68d;
+}
+
+.menu, li:last-child {
+    border-bottom: none;
+}
+.biblioteca{
+    display: flexbox;
+}
