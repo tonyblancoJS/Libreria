@@ -3,37 +3,69 @@ body {
     font-style: normal;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 100px;
+    background-color: aqua;
+}
+.nav-logo{
+    padding: 10px 30px;
+}
+main{
+    border: solid 2px red;
+    text-align: center;
+}
+footer{
+    border: solid 5px grey;
+    height: 100px;
+}
+.header{
+    width: 100%;
+    height: 70px;
+    background-color: #91c68d;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    align-content: center;
+}
 .menu-container {
     position: relative;
     display: inline-block;
-    text-decoration: solid;
+    text-decoration: none;
 }
-
 .menu-btn, .home {
-    background-color: white;
+    background-color: #91c68d;
     color: black;
     font-weight: 400;
     border: none;
-    padding: 10px 20px;
+    padding: 10px 30px;
     cursor: pointer;
-    text-decoration: solid;
+    text-decoration: none;
 }
-
 .menu {
-    background-color: white;
+    background-color: #91c68d;
     display: none;
     position: absolute;
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
-
 .menu li {
-    border-bottom: 1px solid #91c68d;
+    border-bottom: 1px solid white;
+    background-color: #91c68d;
+    margin: 10px 0px 10px;
+    padding: 10px;
+    text-align: center;
+    
 }
-
+a{
+    text-decoration: none;
+}
 .menu, li:last-child {
     border-bottom: none;
 }
