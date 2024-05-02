@@ -10,8 +10,23 @@ body {
     font-style: normal;
     margin: 0 auto; /*es necesario para poder centrar la pagina*/
 }
+.header{
+    width: 960px;;
+    height: 80px;
+    background-color: #91c68d;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    align-content: center;
+}
+.header-envios{
+    background-color: crimson;
+    text-align: center;
+}
 .header-nav{
     display:flex;
+    height: 62px;
     justify-content: space-around;
 }
 nav{
@@ -29,16 +44,6 @@ main{
 footer{
     border: solid 5px grey;
     height: 100px;
-}
-.header{
-    width: 960px;;
-    height: 70px;
-    background-color: #91c68d;
-    position: sticky;
-    top: 0;
-    left: 0;
-    z-index: 999;
-    align-content: center;
 }
 .menu-container {
     position: relative;
