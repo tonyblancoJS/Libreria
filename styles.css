@@ -43,13 +43,14 @@ main{
 }
 footer{
     border: solid 5px grey;
-    height: 100px;
+    height: 150px;
+    align-content: center;
 }
 .footer{
     display:flex;
     height: 62px;
     justify-content: center;
-    gap: 20px;
+    gap: 60px;
     align-items: center;
 }
 footer div ul li{
@@ -109,4 +110,11 @@ button:hover{
 .derechos{
     display: flex;
     justify-content: center;
+}
+.footer-list-derechos{
+    display: flex;
+    justify-content: center;
+    direction: row;
+    list-style-type: none;
+    gap: 15px;
 }
