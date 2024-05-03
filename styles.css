@@ -45,6 +45,19 @@ footer{
     border: solid 5px grey;
     height: 100px;
 }
+.footer{
+    display:flex;
+    height: 62px;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+footer div ul li{
+    list-style-type: none;
+}
+footer img{
+    width: 30px;
+}
 .menu-container {
     position: relative;
     display: inline-block;
@@ -73,7 +86,6 @@ footer{
     margin: 10px 0px 10px;
     padding: 10px;
     text-align: center;
-    
 }
 a{
     text-decoration: none;
@@ -90,7 +102,11 @@ button:hover{
 .biblioteca{
     display: flexbox;
 }
-img:hover{
+.nav-logo:hover{
     transform: rotate(360deg);
     transition: 1s; 
+}
+.derechos{
+    display: flex;
+    justify-content: center;
 }
