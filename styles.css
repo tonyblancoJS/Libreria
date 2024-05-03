@@ -1,42 +1,112 @@
-body {
-    font-weight: 400;
-    font-style: normal;
+*{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-
+body {
+    width: 960px;
+    align-items: center;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0 auto; /*es necesario para poder centrar la pagina*/
+}
+.header{
+    width: 960px;;
+    height: 80px;
+    background-color: #91c68d;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    align-content: center;
+}
+.header-envios{
+    background-color: crimson;
+    text-align: center;
+}
+.header-nav{
+    display:flex;
+    height: 62px;
+    justify-content: space-around;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-logo{
+    width: 40px;
+}
+main{
+    border: solid 2px red;
+    text-align: center;
+}
+footer{
+    border: solid 5px grey;
+    height: 100px;
+}
+.footer{
+    display:flex;
+    height: 62px;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+footer div ul li{
+    list-style-type: none;
+}
+footer img{
+    width: 30px;
+}
 .menu-container {
     position: relative;
     display: inline-block;
-    text-decoration: solid;
+    text-decoration: none;
 }
-
 .menu-btn, .home {
-    background-color: white;
+    background-color: #91c68d;
     color: black;
     font-weight: 400;
     border: none;
-    padding: 10px 20px;
+    padding: 10px 30px;
     cursor: pointer;
-    text-decoration: solid;
+    text-decoration: none;
 }
-
 .menu {
-    background-color: white;
+    background-color: #91c68d;
     display: none;
     position: absolute;
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
-
 .menu li {
-    border-bottom: 1px solid #91c68d;
+    border-bottom: 1px solid white;
+    background-color: #91c68d;
+    margin: 10px 0px 10px;
+    padding: 10px;
+    text-align: center;
 }
-
+a{
+    text-decoration: none;
+}
+a:hover{
+    color:white;
+}
+button:hover{
+    color:white;
+}
 .menu, li:last-child {
     border-bottom: none;
 }
 .biblioteca{
     display: flexbox;
+}
+.nav-logo:hover{
+    transform: rotate(360deg);
+    transition: 1s; 
+}
+.derechos{
+    display: flex;
+    justify-content: center;
 }
