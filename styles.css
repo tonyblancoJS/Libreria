@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 body {
+    background-image: url(/ASSET/bg-fel-internacional.png);
     width: 960px;
     align-items: center;
     font-weight: 400;
@@ -40,6 +41,9 @@ nav{
 main{
     border: solid 2px red;
     text-align: center;
+}
+.banner-main{
+    width: 960px;
 }
 footer{
     border: solid 5px grey;
