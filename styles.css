@@ -163,3 +163,26 @@ button:hover{
     list-style-type: none;
     gap: 15px;
 }
+.main-contacto-maps{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    font-size: 30px;
+    gap: 50px;
+}
+.maps{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 800px;
+    height: 225px;
+    margin: 50px;
+    gap: 150px;
+}
+.maps-detalle, #detalle{
+    width: 400px;
+    align-content: center;
+}
+
