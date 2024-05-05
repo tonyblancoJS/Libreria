@@ -71,7 +71,7 @@ main{
 .container{
     width: 1280px;
     display: flex;
-    justify-content: center;
+    justify-content: left; /*las portadas se ubican de izq a der 4 por fila*/
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
@@ -169,7 +169,8 @@ button:hover{
     justify-content: center;
     align-items: center;
     text-align: left;
-    font-size: 30px;
+    font-size: 25px;
+    color:rgb(156, 71, 71);
     gap: 50px;
 }
 .maps{
