@@ -84,6 +84,7 @@ main{
 .img-cards{
     width: 200px;
     gap: 50px;
+    box-shadow: 16px 16px 16px 0px rgba(0, 0, 0, 0.6);
 }
 
 footer{
