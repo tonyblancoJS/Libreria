@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body {
-    background-image: url(/ASSET/bg-fel-internacional.png);
+    background-image: url(/assets/imagenes/bg-fel-internacional.png);
     width: 100%;
     display: flex;
     flex-direction: column; /*permite mostrar en una sola columna nav, main, footer*/
