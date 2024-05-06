@@ -1,28 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Registro</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Libreria Jaimitos</title>
+  <link rel="stylesheet" type="text/css" href="/styles.css">
+  <script src="script.js"></script>
+  <link rel="icon" href="/ASSET/libro-naranja.png" type="image/x-icon">
 </head>
-
 <body>
-    <header>
+  <header class="header">
+    <div class="header-envios">Envios gratis desde compras superiores a $30.000.-</div>
+    <nav class="header-nav">
+      <div class="nav-logo">
+        <a href="index.html"><img src="/ASSET/libro-naranja.png" alt="logo-libro"  id="logo"></a><p id="nav-logo-nombre-libreria">LIBRERIA JAIMITOS</p>
+      </div>
+      <div>
         <a href="index.html" class="home">HOME</a>
-        <div class="menu-container">
+          <div class="menu-container">
             <button class="menu-btn">CATEGORIAS</button>
-            <ul class="menu">
-                <li><a href="aventura.html" class="recetas">AVENTURA </a></li>
-                <li><a href="terror.html" class="recetas">TERROR</a></li>
-                <li><a href="historia.html" class="recetas">HISTORIA</a></li>
-                <li><a href="#" class="recetas">NOVELAS ROMANTICAS</a></li>
-            </ul>
-        </div>
-        <a href="Registro.html" class="home">UNIRSE</a>
-    </header>
+              <ul class="menu">
+                  <li><a href="aventura.html" class="categorias">AVENTURA</a></li>
+                  <li><a href="terror.html" class="categorias">TERROR</a></li>
+                  <li><a href="historia.html" class="categorias">HISTORIA</a></li>
+                  <li><a href="ciencia-ficcion.html" class="categorias">CIENCIA FICCION</a></li>
+              </ul>
+          </div>
+        <a href="registro.html" class="home">UNIRSE</a>
+        <a href="contacto.html" class="home">CONTACTO</a>
+      </div>
+    </nav>
+  </header>
     <div class="content">
         <h1>Registro</h1>
         <p>Registrate en nuestra pagina y empeza a disfrutar de los mejores libros</p>
@@ -83,7 +91,21 @@
             <input type="reset">
         </form>  
     </div>
-    <script src="script.js"></script>
+    <footer>
+      <div class="footer">
+        <a href="https://www.instagram.com/" target="_blank"><img src="/ASSET/instagram.png" alt="logo instagram"></a>
+        <a href="https://twitter.com/?lang=es" target="_blank"><img src="/ASSET/twitter.png" alt="logo twitter"></a>
+        <a href="https://www.youtube.com/" target="_blank"><img src="/ASSET/youtube.png" alt="logo youtube"></a>
+        <a href="" target="_blank"><img src="/ASSET/whatsapp.png" alt="logo-whatsapp"></a>
+        <a href="https://maps.app.goo.gl/a2hLQXRVAoxBVWii8" target="_blank"><img src="/ASSET/maps.png" alt="ubicacion en mapa google"></a>
+      </div>
+        <ul class="footer-list-derechos">
+          <li>Terminos y condiciones</li>
+          <li>-</li>
+          <li>Derechos reservados &#169; 2024</li>
+          <li>-</li>
+          <li>Politicas de protecciones de datos</li>
+        </ul>
+    </footer>
 </body>
-
 </html>

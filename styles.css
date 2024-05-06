@@ -5,50 +5,94 @@
 }
 body {
     background-image: url(/ASSET/bg-fel-internacional.png);
-    width: 960px;
+    width: 100%;
+    display: flex;
+    flex-direction: column; /*permite mostrar en una sola columna nav, main, footer*/
     align-items: center;
     font-weight: 400;
     font-style: normal;
     margin: 0 auto; /*es necesario para poder centrar la pagina*/
 }
 .header{
-    width: 960px;;
-    height: 80px;
-    background-color: #91c68d;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 110px;
+    background-color: rgb(255, 180, 0);
     position: sticky;
     top: 0;
     left: 0;
     z-index: 999;
-    align-content: center;
+    box-shadow: 0px 6px 16px 0 rgba(0, 0, 0, 0.6);
 }
 .header-envios{
-    background-color: crimson;
+    font-size: large;
+    padding: 5px 0px 5px;
+    color: rgb(243, 236, 236);
+    background-color: rgb(244, 19, 64);
     text-align: center;
+    justify-content: center;
 }
 .header-nav{
-    display:flex;
-    height: 62px;
-    justify-content: space-around;
+    display: flex;
+    height: 82px;
+    justify-content: center;
 }
 nav{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.nav-logo{
+#logo{
     width: 40px;
 }
+#logo:hover{
+    transform: rotate(360deg);
+    transition: 1s; 
+}
+#nav-logo-nombre-libreria{
+    font-size: 18px;
+    align-content: center;
+    margin: 0px 300px 0px 30px;
+}
+.nav-logo{
+    display:flex;
+    flex-direction: row;
+}
 main{
-    border: solid 2px red;
     text-align: center;
+    justify-content: center;
 }
 .banner-main{
-    width: 960px;
+    margin: 20px;
+    width: 1200px;
+    padding-bottom: 40px;
+    border-bottom: solid 2px rgb(150, 150, 150);
 }
+.container{
+    width: 1280px;
+    display: flex;
+    justify-content: left; /*las portadas se ubican de izq a der 4 por fila*/
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 70px;
+}
+.container-cards{
+    gap: 50px;
+}
+.img-cards{
+    width: 200px;
+    gap: 50px;
+    box-shadow: 16px 16px 16px 0px rgba(0, 0, 0, 0.6);
+}
+
 footer{
+    width: 100%;
     border: solid 5px grey;
     height: 150px;
     align-content: center;
+    margin-top: 50px;
 }
 .footer{
     display:flex;
@@ -69,8 +113,10 @@ footer img{
     text-decoration: none;
 }
 .menu-btn, .home {
-    background-color: #91c68d;
+    background-color: rgb(255, 180, 0);
     color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
     font-weight: 400;
     border: none;
     padding: 10px 30px;
@@ -78,7 +124,7 @@ footer img{
     text-decoration: none;
 }
 .menu {
-    background-color: #91c68d;
+    background-color: rgb(255, 180, 0);
     display: none;
     position: absolute;
     list-style-type: none;
@@ -87,7 +133,7 @@ footer img{
 }
 .menu li {
     border-bottom: 1px solid white;
-    background-color: #91c68d;
+    background-color: rgb(255, 180, 0);
     margin: 10px 0px 10px;
     padding: 10px;
     text-align: center;
@@ -107,10 +153,7 @@ button:hover{
 .biblioteca{
     display: flexbox;
 }
-.nav-logo:hover{
-    transform: rotate(360deg);
-    transition: 1s; 
-}
+
 .derechos{
     display: flex;
     justify-content: center;
@@ -122,3 +165,27 @@ button:hover{
     list-style-type: none;
     gap: 15px;
 }
+.main-contacto-maps{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    font-size: 25px;
+    color:rgb(156, 71, 71);
+    gap: 50px;
+}
+.maps{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 800px;
+    height: 225px;
+    margin: 50px;
+    gap: 150px;
+}
+.maps-detalle, #detalle{
+    width: 400px;
+    align-content: center;
+}
+
