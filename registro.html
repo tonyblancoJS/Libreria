@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
 </head>
 <body>
   <header class="header">
@@ -36,22 +37,23 @@
     </nav>
   </header>
     <div class="content">
-        <h1>Registro</h1>
-        <p>Registrate en nuestra pagina y empeza a disfrutar de los mejores libros</p>
+        <h1 class="titulo-registro">REGISTRATE</h1>
+        <hr>
+        <br>
         <form class="registro">
-            <label for="nombre">Nombre:</label>
+            <label for="nombre">Nombre</label>
             <input name="nombre" id="nombre" type="text" placeholder="inserte su nombre">
-            <label for="apellido">Apellido:</label>
+            <label for="apellido">Apellido</label>
             <input name="apellido" id="apellido" type="text" placeholder="inserte su apellido"><br>
-            <p>Direccion:</p>
-            <label for="calle">Calle:</label>
+            <label for="calle">Calle</label>
             <input name="calle" id="calle" type="text" placeholder="ingrese su calle">
-            <label for="numero">Numero:</label>
+            <label for="numero">Numero</label>
             <input name="numero" id="numero" type="text" placeholder="inserte altura de su domicilio">
-            <label for="provincias">Provincia:</label>
+            <label for="provincias">Provincia</label>
             <select id="provincias" name="provincias">
+                <option disabled selected>Seleccionar</option>
                 <option value="Buenos Aires">Buenos Aires</option>
-                 <option value="Catamarca">Catamarca</option>
+                <option value="Catamarca">Catamarca</option>
                 <option value="Chaco">Chaco</option>
                 <option value="Chubut">Chubut</option>
                 <option value="Córdoba">Córdoba</option>
@@ -74,25 +76,24 @@
                 <option value="Tierra del Fuego">Tierra del Fuego</option>
                     <option value="Tucumán">Tucumán</option>
             </select>
-            <label for="cp">Codigo Postal:</label>
-            <input name="cp" id="cp" type="text" placeholder="inserte su codigo postal"><br><br>
-            <label for="tel">Telefono:</label>
+            <label for="cp">Codigo Postal</label>
+            <input name="cp" id="cp" type="text" placeholder="inserte su codigo postal">
+            <label for="tel">Telefono</label>
             <input name="tel" id="tel" type="text" placeholder="inserte su telefono">
-            <label for="cumple">Fecha de nacimiento:</label>
+            <label for="cumple">Fecha de nacimiento</label>
             <input name="cumple" id="cumple" type="date">
-            <label for="email">Email:</label>
+            <label for="email">Email</label>
             <input name="email" id="email" type="email" placeholder="inserte su email" required>
-            <label for="clave">Clave:</label>
+            <label for="clave">Clave</label>
             <input name="clave" id="clave" type="password" placeholder="inserte su nueva clave" required><br><br>
-            Genero:
-            <input name="genero" type="radio" value="masculino">Masculino
-            <input name="genero" type="radio" value="femenino">Femenino
-            <input name="genero" type="radio" value="otro">Otro
-            <br><br>
-            <label for="consultas">Consultas y opiniones:</label><br>
+            <span class="genero">Genero</span>
+            <input class="radio" name="genero" type="radio" value="masculino"><label for="">Masculino</label>
+            <input class="radio" name="genero" type="radio" value="femenino"><label for="">Femenino</label>
+            <input class="radio" name="genero" type="radio" value="otro"><label for="">Otro</label> 
+            <label for="consultas">Consultas y opiniones</label><br>
             <textarea name="consultas" rows="10" cols="40" placeholder="Envianos consulta o sugerencia de libros que podriamos añadir a nuestro sitio"></textarea><br><br>
-            <input type="submit">
-            <input type="reset">
+            <input class="boton-enviar" type="submit">
+            <input class="boton-reset" type="reset">
         </form>  
     </div>
     <footer>
