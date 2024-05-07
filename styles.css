@@ -6,8 +6,6 @@
     font-weight: 400;
     font-style: normal;
 }
-
-
 body {
     background-image: url(/assets/imagenes/bg-fel-internacional.png);
     width: 100%;
@@ -260,6 +258,7 @@ form input, select, option, .radio{
     font-family: "Roboto-flex", sans-serif;
     font-weight:bold;
     background-color: rgb(52, 183, 52);
+    border: none;
     color: white;
     border-radius: 50px;
     padding: 10px 0px 10px 0px;
@@ -273,6 +272,7 @@ form input, select, option, .radio{
     font-family: "Roboto-flex", sans-serif;
     font-weight:bold;
     background-color: rgb(252, 1, 1);
+    border: none;
     color: white;
     border-radius: 50px;
     padding: 10px 0px 10px 0px;
