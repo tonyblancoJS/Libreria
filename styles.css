@@ -92,10 +92,10 @@ div a img:hover{
 
 footer{
     width: 100%;
-    border: solid 5px grey;
     height: 150px;
     align-content: center;
     margin-top: 50px;
+    background-color: rgb(255, 180, 0);
 }
 .footer{
     display:flex;
