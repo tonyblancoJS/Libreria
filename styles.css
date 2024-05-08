@@ -284,3 +284,6 @@ form input, select, option, .radio{
 .radio{
     margin: 0px 5px 30px 20px;
 }
+#cumple, #provincias{
+    color:grey;
+}
