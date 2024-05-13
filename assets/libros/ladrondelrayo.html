@@ -5,23 +5,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Percy Jackson 1</title>
   <link rel="stylesheet" type="text/css" href="/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <a href="/index.html" class="home">HOME</a>
-            <div class="menu-container">
+    <header class="header">
+        <div class="header-envios">Envios gratis desde compras superiores a $30.000.-</div>
+        <nav class="header-nav">
+          <div class="nav-logo">
+            <a href="/index.html"><img src="/assets/imagenes/libro-naranja.png" alt="logo-libro"  id="logo"></a><p id="nav-logo-nombre-libreria">LIBRERIA JAIMITOS</p>
+          </div>
+          <div>
+            <a href="/index.html" class="home">HOME</a>
+              <div class="menu-container">
                 <button class="menu-btn">CATEGORIAS</button>
-                <ul class="menu">
-                    <li><a href="/aventura.html" class="categorias">AVENTURA </a></li>
-                    <li><a href="/clasicos.html" class="categorias">CLASICOS</a></li>
-                    <li><a href="/historia.html" class="categorias">HISTORIA</a></li>
-                    <li><a href="/romanticas.html" class="categorias">NOVELAS ROMANTICAS</a></li>
-                    <li><a href="/terror.html" class="categorias">TERROR</a></li>
-                </ul>
-            </div>
-        <a href="/registro.html" class="home">UNIRSE</a>
-    </header>
-    <Conteiner>
+                  <ul class="menu">
+                      <li><a href="/aventura.html" class="categorias">AVENTURA </a></li>
+                        <li><a href="/clasicos.html" class="categorias">CLASICOS</a></li>
+                        <li><a href="/historia.html" class="categorias">HISTORIA</a></li>
+                        <li><a href="/romanticas.html" class="categorias">NOVELAS ROMANTICAS</a></li>
+                        <li><a href="/terror.html" class="categorias">TERROR</a></li>
+                  </ul>
+              </div>
+            <a href="/registro.html" class="home">UNIRSE</a>
+            <a href="/contacto.html" class="home">CONTACTO</a>
+          </div>
+        </nav>
+      </header>
+    <Conteiner class="conteiner-libro">
         <h1>PERCY JACKSON Y EL LADRON DEL RAYO</h1><br><br>
         <h2>DESCRIPCION</h2><br>
         <p>El ladrón del rayo da comienzo a la serie «Percy Jackson y los Dioses del Olimpo».<br>
@@ -41,11 +53,27 @@
         Sobre «Percy Jackson y los Dioses del Olimpo» se ha dicho:<br>
         «No sigas buscando al nuevo Harry Potter: descubre a Percy Jackson, como  lo han hecho ya legiones de admiradores.»<br>
         Kirkus Reviews</p><br><br>
-        <a href="https://eslnms.weebly.com/uploads/5/5/3/0/5530796/percy_jackson_y_los_dioses_del_olimpo_1_-_el_ladron_del_rayo_-_rick_riordan.pdf"><h2>DESCARGAR EL LIBRO</h2></a><br><br>
-        <a href="https://www.yenny-elateneo.com/MLA-878650978-percy-jackson-1-el-ladron-del-rayo-rick-riordan-_JM"><h2>COMPRA EL LIBRO</h2></a><br><br>
+        <a href="https://eslnms.weebly.com/uploads/5/5/3/0/5530796/percy_jackson_y_los_dioses_del_olimpo_1_-_el_ladron_del_rayo_-_rick_riordan.pdf" class="link-descarga" target="_blank"><h2>DESCARGAR EL LIBRO</h2></a><br><br>
+        <a href="https://www.yenny-elateneo.com/MLA-878650978-percy-jackson-1-el-ladron-del-rayo-rick-riordan-_JM" class="link-compra"  target="_blank"><h2>COMPRA EL LIBRO</h2></a><br><br>
         <h2>AUDIOLIBRO EN VIDEO</h2><br>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/ySArBTXYPzw?si=aSirSnsdf0z_8lty" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </Conteiner>
+    <footer>
+      <div class="footer">
+        <a href="https://www.instagram.com/" target="_blank"><img src="/assets/imagenes/instagram.png" alt="logo instagram"></a>
+        <a href="https://twitter.com/?lang=es" target="_blank"><img src="/assets/imagenes/twitter.png" alt="logo twitter"></a>
+        <a href="https://www.youtube.com/" target="_blank"><img src="/assets/imagenes/youtube.png" alt="logo youtube"></a>
+        <a href="" target="_blank"><img src="/assets/imagenes/whatsapp.png" alt="logo-whatsapp"></a>
+        <a href="https://maps.app.goo.gl/a2hLQXRVAoxBVWii8" target="_blank"><img src="/assets/imagenes/maps.png" alt="ubicacion en mapa google"></a>
+      </div>
+        <ul class="footer-list-derechos">
+          <li>Terminos y condiciones</li>
+          <li>-</li>
+          <li>Derechos reservados &#169; 2024</li>
+          <li>-</li>
+          <li>Politicas de protecciones de datos</li>
+        </ul>
+    </footer>
     <script src="/script.js"></script>
     </body>
     </html>
