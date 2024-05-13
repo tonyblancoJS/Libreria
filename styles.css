@@ -6,8 +6,6 @@
     font-weight: 400;
     font-style: normal;
 }
-
-
 body {
     background-image: url(/assets/imagenes/bg-fel-internacional.png);
     width: 100%;
@@ -38,6 +36,9 @@ body {
     text-align: center;
     justify-content: center;
 }
+.header-envios-registro{
+    padding: 5px 0px 5px;
+}
 .header-nav{
     display: flex;
     height: 82px;
@@ -65,24 +66,23 @@ nav{
     flex-direction: row;
 }
 main{
-    width: 100vw;
     text-align: center;
     justify-content: center;
 }
 .banner-main{
     margin: 20px;
-    width: 80vw;
+    width: 1200px;
     padding-bottom: 40px;
     border-bottom: solid 2px rgb(150, 150, 150);
 }
 .container{
-    width: 100vw;
+    width: 1280px;
     display: flex;
-    justify-content: center; /*las portadas se ubican de izq a der 4 por fila*/
+    justify-content: left; /*las portadas se ubican de izq a der 4 por fila*/
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 10vh;
+    gap: 70px;
 }
 .container-cards{
     gap: 50px;
@@ -92,14 +92,18 @@ main{
     height: 300px;
     gap: 50px;
     box-shadow: 16px 16px 16px 0px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease;
+}
+div a img:hover{
+    transform: scale(1.15);
 }
 
 footer{
     width: 100%;
-    border: solid 5px grey;
     height: 150px;
     align-content: center;
     margin-top: 50px;
+    background-color: rgb(255, 180, 0);
 }
 .footer{
     display:flex;
@@ -225,4 +229,61 @@ button:hover{
     margin:10vh 20vh;
     justify-content: center;
     text-align: center;
+}
+.content{
+    width: 1280px;
+}
+.titulo-registro{
+    font-family:"Roboto Flex", sans-serif;
+    font-size: 30px;
+    padding: 100px 0 20xp 0;
+    margin: 20px 0px 20px 0px;
+}
+form label, select, option, textarea, .genero, .radio{
+    font-size: 16px;
+    font-family:"Roboto Flex", sans-serif;
+    font-weight:500;
+    color: rgb(52, 51, 51);
+}
+form input, select, option, .radio{
+    font-size: 16px;
+    font-family:"Roboto Flex", sans-serif;
+    margin: 10px 30px 10px 10px;
+    padding: 10px 16px;
+    border: solid 1px rgb(255, 180, 0);
+    border-radius: 5px;
+}
+.boton-enviar{
+    margin: 0px;
+    font-family: "Roboto-flex", sans-serif;
+    font-weight:bold;
+    background-color: rgb(52, 183, 52);
+    border: none;
+    color: white;
+    border-radius: 50px;
+    padding: 10px 0px 10px 0px;
+    width: 150px;
+}
+.boton-enviar:hover{
+    background-color: rgb(28, 91, 28);
+}
+.boton-reset{
+    margin: 0px;
+    font-family: "Roboto-flex", sans-serif;
+    font-weight:bold;
+    background-color: rgb(252, 1, 1);
+    border: none;
+    color: white;
+    border-radius: 50px;
+    padding: 10px 0px 10px 0px;
+    width: 150px;
+}
+.boton-reset:hover{
+    background-color: rgb(137, 3, 3);
+}
+.radio{
+    margin: 0px 5px 30px 20px;
+}
+#cumple, #provincias{
+    color:grey;
 }
