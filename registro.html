@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Libreria Jaimitos</title>
   <link rel="stylesheet" type="text/css" href="/styles.css">
-  <script src="script.js"></script>
   <link rel="icon" href="/assets/imagenes/libro-naranja.png" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,65 +34,104 @@
       </div>
     </nav>
   </header>
-    <div class="content">
+    <div class="content" id="content">
         <h1 class="titulo-registro">REGISTRATE</h1>
         <hr>
         <br>
-        <form class="registro">
+        <form class="registro" id="registro" method="get">
+          <div class="form-control">
             <label for="nombre">Nombre</label>
             <input name="nombre" id="nombre" type="text" placeholder="inserte su nombre">
+          </div>
+          <div class="error" id="error-nombre"></div>
+          <div >
             <label for="apellido">Apellido</label>
             <input name="apellido" id="apellido" type="text" placeholder="inserte su apellido"><br>
+          </div>
+          <div class="error" id="error-apellido"></div>
+          <div>
             <label for="calle">Calle</label>
             <input name="calle" id="calle" type="text" placeholder="ingrese su calle">
+          </div>
+          <div class="error" id="error-calle"></div>
+          <div>
             <label for="numero">Numero</label>
             <input name="numero" id="numero" type="text" placeholder="inserte altura de su domicilio">
+          </div>
+          <div class="error" id="error-numero"></div>
+          <div>
             <label for="provincias">Provincia</label>
             <select id="provincias" name="provincias">
-                <option disabled selected>Seleccionar</option>
-                <option value="Buenos Aires">Buenos Aires</option>
-                <option value="Catamarca">Catamarca</option>
-                <option value="Chaco">Chaco</option>
-                <option value="Chubut">Chubut</option>
-                <option value="Córdoba">Córdoba</option>
-                <option value="Corrientes">Corrientes</option>
-                <option value="Entre Ríos">Entre Ríos</option>
-                <option value="Formosa">Formosa</option>
-                <option value="Jujuy">Jujuy</option>
-                <option value="La Pampa">La Pampa</option>
-                <option value="La Rioja">La Rioja</option>
-                <option value="Mendoza">Mendoza</option>
-                <option value="Misiones">Misiones</option>
-                <option value="Neuquén">Neuquén</option>
-                <option value="Río Negro">Río Negro</option>
-                <option value="Salta">Salta</option>
-                <option value="San Juan">San Juan</option>
-                <option value="San Luis">San Luis</option>
-                <option value="Santa Cruz">Santa Cruz</option>
-                <option value="Santa Fe">Santa Fe</option>
-                <option value="Santiago del Estero">Santiago del Estero</option>
-                <option value="Tierra del Fuego">Tierra del Fuego</option>
-                    <option value="Tucumán">Tucumán</option>
+              <option disabled selected value="">Seleccionar</option>
+              <option value="Buenos Aires">Buenos Aires</option>
+              <option value="Catamarca">Catamarca</option>
+              <option value="Chaco">Chaco</option>
+              <option value="Chubut">Chubut</option>
+              <option value="Córdoba">Córdoba</option>
+              <option value="Corrientes">Corrientes</option>
+              <option value="Entre Ríos">Entre Ríos</option>
+              <option value="Formosa">Formosa</option>
+              <option value="Jujuy">Jujuy</option>
+              <option value="La Pampa">La Pampa</option>
+              <option value="La Rioja">La Rioja</option>
+              <option value="Mendoza">Mendoza</option>
+              <option value="Misiones">Misiones</option>
+              <option value="Neuquén">Neuquén</option>
+              <option value="Río Negro">Río Negro</option>
+              <option value="Salta">Salta</option>
+              <option value="San Juan">San Juan</option>
+              <option value="San Luis">San Luis</option>
+              <option value="Santa Cruz">Santa Cruz</option>
+              <option value="Santa Fe">Santa Fe</option>
+              <option value="Santiago del Estero">Santiago del Estero</option>
+              <option value="Tierra del Fuego">Tierra del Fuego</option>
+              <option value="Tucumán">Tucumán</option>
             </select>
+          </div>
+          <div class="error" id="error-provincias"></div>
+          <div>  
             <label for="cp">Codigo Postal</label>
             <input name="cp" id="cp" type="text" placeholder="inserte su codigo postal">
+          </div>
+          <div class="error" id="error-cp"></div>
+          <div>
             <label for="tel">Telefono</label>
             <input name="tel" id="tel" type="text" placeholder="inserte su telefono">
+          </div>
+          <div class="error" id="error-tel"></div>
+          <div>
             <label for="cumple">Fecha de nacimiento</label>
             <input name="cumple" id="cumple" type="date">
+          </div>
+          <div class="error" id="error-cumple"></div>
+          <div>
             <label for="email">Email</label>
-            <input name="email" id="email" type="email" placeholder="inserte su email" required>
+            <input name="email" id="email" type="email" placeholder="inserte su email" >
+          </div>
+          <div class="error" id="error-email"></div>
+          <div>
             <label for="clave">Clave</label>
-            <input name="clave" id="clave" type="password" placeholder="inserte su nueva clave" required><br><br>
-            <span class="genero">Genero</span>
+            <input name="clave" id="clave" type="password" placeholder="inserte su nueva clave" ><br><br>
+          </div>
+          <div class="error" id="error-clave"></div>
+          <div>
+            <span class="genero" id="genero" value="">Genero</span>
             <input class="radio" name="genero" type="radio" value="masculino"><label for="">Masculino</label>
             <input class="radio" name="genero" type="radio" value="femenino"><label for="">Femenino</label>
             <input class="radio" name="genero" type="radio" value="otro"><label for="">Otro</label> 
+          </div>
+          <div class="error" id="error-genero"></div>
+          <div>
             <label for="consultas">Consultas y opiniones</label><br>
             <textarea name="consultas" rows="10" cols="40" placeholder="Envianos consulta o sugerencia de libros que podriamos añadir a nuestro sitio"></textarea><br><br>
-            <input class="boton-enviar" type="submit">
+          </div>
+            <input class="boton-enviar" type="submit" value="guardar-datos">
             <input class="boton-reset" type="reset">
         </form>  
+    </div>
+    <div class="unido" id="unido">
+      <h1>BIENVENIDO</h1>
+      <h3>Te uniste con exito a nuestro sitio, empieza a disfrutar de tus libros favoritos.</h3>
     </div>
     <footer>
       <div class="footer">
@@ -111,5 +149,6 @@
           <li>Politicas de protecciones de datos</li>
         </ul>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
