@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Libreria Jaimitos</title>
   <link rel="stylesheet" type="text/css" href="/styles.css">
-  <script src="script.js"></script>
   <link rel="icon" href="/assets/imagenes/libro-naranja.png" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,6 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
 </head>
 <body>
+  <!--
   <header class="header">
     <div class="header-envios">Envios gratis desde compras superiores a $30.000.-</div>
     <nav class="header-nav">
@@ -35,19 +35,31 @@
       </div>
     </nav>
   </header>
-    <div class="content">
+  -->
+    <div class="form-content">
         <h1 class="titulo-registro">REGISTRATE</h1>
-        <hr>
+        <hr> 
         <br>
-        <form class="registro">
-            <label for="nombre">Nombre</label>
-            <input name="nombre" id="nombre" type="text" placeholder="inserte su nombre">
-            <label for="apellido">Apellido</label>
-            <input name="apellido" id="apellido" type="text" placeholder="inserte su apellido"><br>
+        <form id="formRegister" method="get">
+          <div class="form-control">
+            <label for="firstName">Nombre</label>
+            <input name="firstName" id="firstName" type="text" maxlength="25">
+          </div>
+          <div class="error" id="error-firstname"><h1>Error</h1></div>
+          <div class="form-control">  
+            <label for="lastName">Apellido</label>
+            <input name="lastName" id="lastName" type="text" maxlength="25" placeholder="inserte su apellido">
+          <div class="error" id="error-lastname"></div>  
+          </div>
+          <div class="form-control">
             <label for="calle">Calle</label>
             <input name="calle" id="calle" type="text" placeholder="ingrese su calle">
+          </div>
+          <div class="form-control">  
             <label for="numero">Numero</label>
             <input name="numero" id="numero" type="text" placeholder="inserte altura de su domicilio">
+          </div>
+          <div class="form-control">   
             <label for="provincias">Provincia</label>
             <select id="provincias" name="provincias">
                 <option disabled selected>Seleccionar</option>
@@ -75,24 +87,43 @@
                 <option value="Tierra del Fuego">Tierra del Fuego</option>
                     <option value="Tucumán">Tucumán</option>
             </select>
+          </div>
+          <div class="form-control"> 
             <label for="cp">Codigo Postal</label>
             <input name="cp" id="cp" type="text" placeholder="inserte su codigo postal">
+          </div>
+          <div class="form-control">  
             <label for="tel">Telefono</label>
             <input name="tel" id="tel" type="text" placeholder="inserte su telefono">
+          </div>
+          <div class="form-control">
             <label for="cumple">Fecha de nacimiento</label>
-            <input name="cumple" id="cumple" type="date">
+            <input name="cumple" id="cumple" type="date" placeholder="Fecha de nacimiento">
+          </div>
+          <div class="form-control">    
             <label for="email">Email</label>
             <input name="email" id="email" type="email" placeholder="inserte su email" required>
+          </div>
+          <div class="form-control">    
             <label for="clave">Clave</label>
             <input name="clave" id="clave" type="password" placeholder="inserte su nueva clave" required><br><br>
+          </div>
+          <div class="form-control">    
             <span class="genero">Genero</span>
             <input class="radio" name="genero" type="radio" value="masculino"><label for="">Masculino</label>
             <input class="radio" name="genero" type="radio" value="femenino"><label for="">Femenino</label>
             <input class="radio" name="genero" type="radio" value="otro"><label for="">Otro</label> 
-            <label for="consultas">Consultas y opiniones</label><br>
+          </div>
+          <div class="form-control">
+            <div> 
+            <label for="consultas">Consultas y opiniones</label>
             <textarea name="consultas" rows="10" cols="40" placeholder="Envianos consulta o sugerencia de libros que podriamos añadir a nuestro sitio"></textarea><br><br>
+            </div>
+          </div>    
             <input class="boton-enviar" type="submit">
             <input class="boton-reset" type="reset">
+            <div class="form-buttons" id="formRegister"></div>
+          </div>
         </form>  
     </div>
     <footer>
@@ -111,5 +142,6 @@
           <li>Politicas de protecciones de datos</li>
         </ul>
     </footer>
+  <script src="script.js"></script>
 </body>
 </html>
