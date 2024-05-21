@@ -49,6 +49,34 @@ nav{
     justify-content: center;
     align-items: center;
 }
+.menu-toggle{
+    display: none; /*oculta checkbox*/
+}
+.menu-toggle-icon{
+    display: none;
+    position: absolute;
+    left: 20px;  
+}
+.menu-mobile{
+    display:none;
+    flex-direction: column;
+    background-color: rgb(255, 180, 0);
+    width: auto;
+    position: absolute;
+    left:0;
+    top:100px;
+}
+.menu-toggle:checked~.menu-mobile{
+    display: flex;
+}
+@media (max-width: 760px){
+    .menu-escritorio{
+        display: none;
+    }
+    .menu-toggle-icon{
+        display: block;
+    }
+}
 #logo{
     width: 40px;
 }
@@ -131,7 +159,7 @@ footer img{
     display: inline-block;
     text-decoration: none;
 }
-.menu-btn, .home {
+.menu-btn, .home {/*boton categoria para desplegar submenu*/
     background-color: rgb(255, 180, 0);
     color: black;
     font-family: 'Times New Roman', Times, serif;
@@ -142,7 +170,7 @@ footer img{
     cursor: pointer;
     text-decoration: none;
 }
-.menu {
+.menu { /*submenu desplegable  al presionar categoria*/
     background-color: rgb(255, 180, 0);
     display: none;
     position: absolute;
