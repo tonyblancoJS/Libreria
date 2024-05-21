@@ -69,7 +69,7 @@ nav{
 .menu-toggle:checked~.menu-mobile{
     display: flex;
 }
-@media (max-width: 760px){
+@media (max-width: 792px){
     .menu-escritorio{
         display: none;
     }
