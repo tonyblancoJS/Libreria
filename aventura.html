@@ -5,84 +5,100 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Libreria Jaimitos</title>
   <link rel="stylesheet" type="text/css" href="/styles.css">
-  <link rel="icon" href="/assets/imagenes/libro-naranja.png" type="image/x-icon">
+  <link rel="icon" href="/assets/imagenes/libronaranja.png" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
 </head>
 <body>
-    <header class="header">
-        <div class="header-envios">Envios gratis desde compras superiores a $30.000.-</div>
-        <nav class="header-nav">
-          <div class="nav-logo">
-            <a href="index.html"><img src="/assets/imagenes/libro-naranja.png" alt="logo-libro"  id="logo"></a><p id="nav-logo-nombre-libreria">LIBRERIA JAIMITOS</p>
+  <header class="header">
+    <div class="header-envios">Envios gratis desde compras superiores a $30.000.-</div>
+    <nav class="header-nav">
+      <div class="nav-logo">
+        <a href="index.html"><img src="/assets/imagenes/libronaranja.png" alt="logo-libro"  id="logo"></a><p id="nav-logo-nombre-libreria">LIBRERIA JAIMITOS</p>
+      </div>
+      <!--Menu Desktop-->
+      <div class="menu-escritorio">
+        <a href="index.html" class="home">HOME</a>
+          <div class="menu-container">
+            <button class="menu-btn">CATEGORIAS</button>
+              <ul class="menu">
+                  <li><a href="aventura.html" class="categorias">AVENTURA </a></li>
+                    <li><a href="clasicos.html" class="categorias">CLASICOS</a></li>
+                    <li><a href="romanticas.html" class="categorias">NOVELAS ROMANTICAS</a></li>
+                    <li><a href="terror.html" class="categorias">TERROR</a></li>
+              </ul>
           </div>
-          <div>
-            <a href="index.html" class="home">HOME</a>
-              <div class="menu-container">
-                <button class="menu-btn">CATEGORIAS</button>
-                  <ul class="menu">
-                      <li><a href="aventura.html" class="categorias">AVENTURA </a></li>
-                        <li><a href="clasicos.html" class="categorias">CLASICOS</a></li>
-                        <li><a href="romanticas.html" class="categorias">NOVELAS ROMANTICAS</a></li>
-                        <li><a href="terror.html" class="categorias">TERROR</a></li>
-                  </ul>
-              </div>
-            <a href="registro.html" class="home">UNIRSE</a>
-            <a href="contacto.html" class="home">CONTACTO</a>
-          </div>
-        </nav>
-      </header>
+        <a href="registro.html" class="home">UNIRSE</a>
+        <a href="contacto.html" class="home">CONTACTO</a>
+      </div>
+      <!--Menu Hamburguesa-->
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <label for="menu-toggle" class="menu-toggle-icon">
+        <i class="fas fa-bars"></i>
+      </label>
+      <div class="menu-mobile">
+        <a href="index.html" class="home">HOME</a>
+        <a href="registro.html" class="home">UNIRSE</a>
+        <a href="contacto.html" class="home">CONTACTO</a>
+        <a href="aventura.html" class="home">AVENTURA</a>
+        <a href="clasicos.html" class="home">CLASICOS</a>
+        <a href="romanticas.html" class="home">NOVELAS ROMANTICAS</a>
+        <a href="terror.html" class="home">TERROR</a>
+      </div>
+    </nav>
+  </header>
 
     <h1 class="titulo">AVENTURA</h1>
     <conteiner class="biblioteca">
         <div class="libro">
-            <a href="assets/libros/harrypotter1.html"><img  src="assets/imagenes/e3bcd85377567759874a0664f894a67b.webp" class="portada"></a>
+            <a href="assets/libros/harrypotter1.html"><img  src="assets/imagenes/e3bcd85377567759874a0664f894a67b.webp" class="portada" alt="harry potter 1"></a>
         </div>
         <div class="libro">
-            <a href="assets/libros/harrypotter2.html"><img  src="assets/imagenes/harry-potter-camara.webp" class="portada"  ></a>
+            <a href="assets/libros/harrypotter2.html"><img  alt="harry potter 2" src="assets/imagenes/harry-potter-camara.webp" class="portada"  ></a>
         </div>
         <div class="libro">
-            <a href="assets/libros/harrypotter3.html"><img  src="assets/imagenes/harry-potter-3.webp" class="portada"></a>
+            <a href="assets/libros/harrypotter3.html"><img  alt="harry potter 3" src="assets/imagenes/harry-potter-3.webp" class="portada"></a>
         </div>
         <div class="libro">
-            <a href="assets/libros/harrypotter4.html"><img  src="assets/imagenes/harry-potter-.webp" class="portada"></a>
+            <a href="assets/libros/harrypotter4.html"><img  alt="harry potter 4" src="assets/imagenes/harry-potter-.webp" class="portada"></a>
         </div>
         <div class="libro">
-            <a href="assets/libros/harrypotter5.html"><img  src="assets/imagenes/harry-potter-5.webp" class="portada"></a>
+            <a href="assets/libros/harrypotter5.html"><img  alt="harry potter 5" src="assets/imagenes/harry-potter-5.webp" class="portada"></a>
         </div>
         <div class="libro">
-            <a href="assets/libros/harrypotter6.html"><img  src="assets/imagenes/harry-potter-6.webp" class="portada"></a>
+            <a href="assets/libros/harrypotter6.html"><img  alt="harry potter 6" src="assets/imagenes/harry-potter-6.webp" class="portada"></a>
         </div>
         <div class="libro">
-            <a href="assets/libros/harrypotter7.html"><img  src="assets/imagenes/harry-potter-7.webp" class="portada"></a>
+            <a href="assets/libros/harrypotter7.html"><img  alt="harry potter 7" src="assets/imagenes/harry-potter-7.webp" class="portada"></a>
         </div>
         <div class="libro">
-            <a href="assets/libros/señordelosañillos1.html"><img  src="assets/imagenes/comunidad-del-anillo.jfif" class="portada"></a>
+            <a href="assets/libros/señordelosañillos1.html"><img  alt="señor de los anillos1" src="assets/imagenes/comunidad-del-anillo.jfif" class="portada"></a>
         </div>
         <div class="libro">
-            <a href="assets/libros/dostorres.html"><img  src="assets/imagenes/dos-torres.jfif" class="portada"></a>
+            <a href="assets/libros/dostorres.html"><img  alt="señor de los anillos 2" src="assets/imagenes/dos-torres.jfif" class="portada"></a>
         </div>
         <div class="libro">
-            <a href="assets/libros/ladrondelrayo.html"><img  src="assets/imagenes/ladron-del-rayo.webp" class="portada"></a>
+            <a href="assets/libros/ladrondelrayo.html"><img alt="ladron del rayo" src="assets/imagenes/ladron-del-rayo.webp" class="portada"></a>
         </div>
         <div class="libro">
-            <a href="assets/libros/hobbit.html"><img  src="assets/imagenes/hobbit.webp" class="portada"></a>
+            <a href="assets/libros/hobbit.html"><img  alt="hobbits" src="assets/imagenes/hobbit.webp" class="portada"></a>
         </div>
         <div class="libro">
-            <a href="assets/libros/juegodetronos.html"><img  src="assets/imagenes/juegodetronos.webp" class="portada"></a>
+            <a href="assets/libros/juegodetronos.html"><img alt="juego de tronos" src="assets/imagenes/juegodetronos.webp" class="portada"></a>
         </div>
         <div class="libro">
-            <a href="assets/libros/choquedereyes.html"><img  src="assets/imagenes/choquesdereye.webp" class="portada"></a>
+            <a href="assets/libros/choquedereyes.html"><img alt="choque de reyes" src="assets/imagenes/choquesdereye.webp" class="portada"></a>
         </div>
         <div class="libro">
-            <a href="assets/libros/tormentadeespadas.html"><img  src="assets/imagenes/tormenta-de-espadas.webp" class="portada"></a>
+            <a href="assets/libros/tormentadeespadas.html"><img alt="tormenta de espada" src="assets/imagenes/tormenta-de-espadas.webp" class="portada"></a>
         </div>
         <div class="libro">
-            <a href="assets/libros/festindecuervos.html"><img  src="assets/imagenes/festin-de-cuervos.webp" class="portada"></a>
+            <a href="assets/libros/festindecuervos.html"><img alt="festin de cuervos" src="assets/imagenes/festin-de-cuervos.webp" class="portada"></a>
         </div>
         <div class="libro">
-            <a href="assets/libros/danzadedragones.html"><img  src="assets/imagenes/danza-de-dragones.webp" class="portada"></a>
+            <a href="assets/libros/danzadedragones.html"><img alt="danza de dragones" src="assets/imagenes/danza-de-dragones.webp" class="portada"></a>
         </div>
     </conteiner>
     <footer>

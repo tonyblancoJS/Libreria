@@ -1,61 +1,76 @@
 <!DOCTYPE html>
 <html lang="es">
-  <!DOCTYPE html>
-  <html lang="es">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Novelas Romanticas</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap" rel="stylesheet">
-  </head>
-  <body>
-      <header class="header">
-          <div class="header-envios">Envios gratis desde compras superiores a $30.000.-</div>
-          <nav class="header-nav">
-            <div class="nav-logo">
-              <a href="index.html"><img src="/assets/imagenes/libro-naranja.png" alt="logo-libro"  id="logo"></a><p id="nav-logo-nombre-libreria">LIBRERIA JAIMITOS</p>
-            </div>
-            <div>
-              <a href="index.html" class="home">HOME</a>
-                <div class="menu-container">
-                  <button class="menu-btn">CATEGORIAS</button>
-                    <ul class="menu">
-                        <li><a href="aventura.html" class="categorias">AVENTURA </a></li>
-                          <li><a href="clasicos.html" class="categorias">CLASICOS</a></li>
-                          <li><a href="romanticas.html" class="categorias">NOVELAS ROMANTICAS</a></li>
-                          <li><a href="terror.html" class="categorias">TERROR</a></li>
-                    </ul>
-                </div>
-              <a href="registro.html" class="home">UNIRSE</a>
-              <a href="contacto.html" class="home">CONTACTO</a>
-            </div>
-          </nav>
-        </header>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Libreria Jaimitos</title>
+  <link rel="stylesheet" type="text/css" href="/styles.css">
+  <link rel="icon" href="/assets/imagenes/libronaranja.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+</head>
+<body>
+  <header class="header">
+    <div class="header-envios">Envios gratis desde compras superiores a $30.000.-</div>
+    <nav class="header-nav">
+      <div class="nav-logo">
+        <a href="index.html"><img src="/assets/imagenes/libronaranja.png" alt="logo-libro"  id="logo"></a><p id="nav-logo-nombre-libreria">LIBRERIA JAIMITOS</p>
+      </div>
+      <!--Menu Desktop-->
+      <div class="menu-escritorio">
+        <a href="index.html" class="home">HOME</a>
+          <div class="menu-container">
+            <button class="menu-btn">CATEGORIAS</button>
+              <ul class="menu">
+                  <li><a href="aventura.html" class="categorias">AVENTURA </a></li>
+                    <li><a href="clasicos.html" class="categorias">CLASICOS</a></li>
+                    <li><a href="romanticas.html" class="categorias">NOVELAS ROMANTICAS</a></li>
+                    <li><a href="terror.html" class="categorias">TERROR</a></li>
+              </ul>
+          </div>
+        <a href="registro.html" class="home">UNIRSE</a>
+        <a href="contacto.html" class="home">CONTACTO</a>
+      </div>
+      <!--Menu Hamburguesa-->
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <label for="menu-toggle" class="menu-toggle-icon">
+        <i class="fas fa-bars"></i>
+      </label>
+      <div class="menu-mobile">
+        <a href="index.html" class="home">HOME</a>
+        <a href="registro.html" class="home">UNIRSE</a>
+        <a href="contacto.html" class="home">CONTACTO</a>
+        <a href="aventura.html" class="home">AVENTURA</a>
+        <a href="clasicos.html" class="home">CLASICOS</a>
+        <a href="romanticas.html" class="home">NOVELAS ROMANTICAS</a>
+        <a href="terror.html" class="home">TERROR</a>
+      </div>
+    </nav>
+  </header>
       <h1 class="titulo">Novelas Romanticas</h1>
       <conteiner class="biblioteca">
         <div class="libro">
-          <a href="assets/libros/orgullo.html"><img  src="assets/imagenes/orgullo.jpg" class="portada"></a>
+          <a href="assets/libros/orgullo.html"><img alt="orgullo y prejuicio" src="assets/imagenes/orgullo.jpg" class="portada"></a>
         </div>
         <div class="libro">
-          <a href="assets/libros/cumbres.html"><img  src="assets/imagenes/cumbres.webp" class="portada"></a>
+          <a href="assets/libros/cumbres.html"><img alt="cumbres" src="assets/imagenes/cumbres.webp" class="portada"></a>
         </div>
         <div class="libro">
-          <a href="assets/libros/janeeyre.html"><img  src="assets/imagenes/janeeyre.webp" class="portada"></a>
+          <a href="assets/libros/janeeyre.html"><img alt="jane eyre" src="assets/imagenes/janeeyre.webp" class="portada"></a>
         </div>
         <div class="libro">
-          <a href="assets/libros/amorentiempodecolera.html"><img  src="assets/imagenes/amor-tiempo-de-colera.webp" class="portada"></a>
+          <a href="assets/libros/amorentiempodecolera.html"><img alt="amor en tiempo de colera" src="assets/imagenes/amor-tiempo-de-colera.webp" class="portada"></a>
         </div>
         <div class="libro">
-          <a href="assets/libros/amoryamistad.html"><img  src="assets/imagenes/amor-amistad.webp" class="portada"></a>
+          <a href="assets/libros/amoryamistad.html"><img alt="amory amistad" src="assets/imagenes/amor-amistad.webp" class="portada"></a>
         </div>
         <div class="libro">
-          <a href="assets/libros/mujercitas.html"><img  src="assets/imagenes/mujercitas.webp" class="portada"></a>
+          <a href="assets/libros/mujercitas.html"><img alt="mujercitas" src="assets/imagenes/mujercitas.webp" class="portada"></a>
         </div>
         <div class="libro">
-          <a href="assets/libros/rayuela.html"><img  src="assets/imagenes/rayuela.webp" class="portada"></a>
+          <a href="assets/libros/rayuela.html"><img alt="rayuela" src="assets/imagenes/rayuela.webp" class="portada"></a>
         </div>
       </conteiner>
       <footer>

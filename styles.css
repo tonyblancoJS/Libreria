@@ -264,13 +264,29 @@ button:hover{
     justify-content: center;
     text-align: center;
 }
-.content{
-    text-align: center;
+
+
+@media (max-width: 960px){
+    .menu-escritorio{
+        display: none;
+    }
+    .menu-toggle-icon{
+        display: block;
+    }
 }
+@media screen and (min-width:760px) and (max-width:960px){
+    .books-grid{
+        grid-template-columns: repeat(3,1fr);
+        grid-row: repeat(5,1fr);
+    }
+}
+@media screen and (max-width:760px){
+    .books-grid{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
 .form-content{
-    /*position: absolute;
-    left: 33%;
-    top: 50%;*/
     border-radius: 15px;
     width: 500px;
     background-color: rgb(202, 202, 202);
@@ -280,10 +296,6 @@ button:hover{
 .error{
     color:red;
     margin-bottom: 5px;
-    display:none;
-}
-.form-control input.error, .form-select.error{
-    border: 3px solid blue;
 }
 .titulo-registro{
     text-align: center;
@@ -348,26 +360,6 @@ textarea{
 }
 #cumple, #provincias{
     color:grey;
-}
-
-@media (max-width: 960px){
-    .menu-escritorio{
-        display: none;
-    }
-    .menu-toggle-icon{
-        display: block;
-    }
-}
-@media screen and (min-width:760px) and (max-width:960px){
-    .books-grid{
-        grid-template-columns: repeat(3,1fr);
-        grid-row: repeat(5,1fr);
-    }
-}
-@media screen and (max-width:760px){
-    .books-grid{
-        grid-template-columns: repeat(1,1fr);
-    }
 }
 /* estilos errores en completar formulario */
  .error{
