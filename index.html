@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
 </head>
 <body>
   <header class="header">
@@ -17,7 +18,27 @@
       <div class="nav-logo">
         <a href="index.html"><img src="/assets/imagenes/libronaranja.png" alt="logo-libro"  id="logo"></a><p id="nav-logo-nombre-libreria">LIBRERIA JAIMITOS</p>
       </div>
+      <!--Menu Desktop-->
       <div class="menu-escritorio">
+        <a href="index.html" class="home">HOME</a>
+          <div class="menu-container">
+            <button class="menu-btn">CATEGORIAS</button>
+              <ul class="menu">
+                  <li><a href="aventura.html" class="categorias">AVENTURA </a></li>
+                    <li><a href="clasicos.html" class="categorias">CLASICOS</a></li>
+                    <li><a href="romanticas.html" class="categorias">NOVELAS ROMANTICAS</a></li>
+                    <li><a href="terror.html" class="categorias">TERROR</a></li>
+              </ul>
+          </div>
+        <a href="registro.html" class="home">UNIRSE</a>
+        <a href="contacto.html" class="home">CONTACTO</a>
+      </div>
+      <!--Menu Hamburguesa-->
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <label for="menu-toggle" class="menu-toggle-icon">
+        <i class="fas fa-bars"></i>
+      </label>
+      <div class="menu-mobile">
         <a href="index.html" class="home">HOME</a>
           <div class="menu-container">
             <button class="menu-btn">CATEGORIAS</button>
@@ -62,6 +83,7 @@
       <a href="" target="_blank"><img src="/assets/imagenes/whatsapp.png" alt="logo-whatsapp"></a>
       <a href="https://maps.app.goo.gl/a2hLQXRVAoxBVWii8" target="_blank"><img src="/assets/imagenes/maps.png" alt="ubicacion en mapa google"></a>
     </div>
+    <div class="footer">
       <ul class="footer-list-derechos">
         <li>Terminos y condiciones</li>
         <li>-</li>
@@ -69,6 +91,7 @@
         <li>-</li>
         <li>Politicas de protecciones de datos</li>
       </ul>
+    </div>
   </footer>
   <script src="script.js"></script>
 </body>
