@@ -42,7 +42,7 @@ body {
 .header-nav{
     display: flex;
     height: 82px;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 nav{
     display: flex;
@@ -59,30 +59,33 @@ nav{
 #nav-logo-nombre-libreria{
     font-size: 18px;
     align-content: center;
-    margin: 0px 300px 0px 30px;
+    margin: 0px 30px 0px 30px;
 }
 .nav-logo{
     display:flex;
     flex-direction: row;
 }
 main{
+    display: flex;
+    flex-direction: column;
     text-align: center;
     justify-content: center;
 }
 .banner-main{
     margin: 20px;
-    width: 1200px;
+    width: 80vw;
     padding-bottom: 40px;
     border-bottom: solid 2px rgb(150, 150, 150);
 }
 .container{
-    width: 1280px;
+    max-width: 1440px;
+    width: 80vw;
     display: flex;
-    justify-content: left; /*las portadas se ubican de izq a der 4 por fila*/
+    justify-content: center; /*las portadas se ubican de izq a der 4 por fila*/
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 70px;
+    gap: 4vw;
 }
 .container-cards{
     gap: 50px;
@@ -169,8 +172,8 @@ button:hover{
 }
 .footer-list-derechos{
     display: flex;
-    justify-content: center;
-    direction: row;
+    justify-content: space-evenly;
+    flex-direction: row;
     list-style-type: none;
     gap: 15px;
 }
