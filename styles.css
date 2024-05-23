@@ -260,9 +260,10 @@ button:hover{
 }
 
 .conteiner-libro{
-    margin:10vh 20vh;
+    margin:10vh 20vw;
     justify-content: center;
     text-align: center;
+    max-width: 80vw;
 }
 
 
