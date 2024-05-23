@@ -304,25 +304,39 @@ button:hover{
     padding: 100px 0 20xp 0;
     margin: 20px 0px 20px 0px;
 }
-form label{
+form label, #genero{
     position: relative;
-    left: 40%;
     font-size: 16px;
     font-family:"Roboto Flex", sans-serif;
     font-weight:500;
     color: rgb(52, 51, 51);
 }
-form input, select, option{
+form input, select, option, fieldset{
     width: 100%;
     font-size: 16px;
     font-family:"Roboto Flex", sans-serif;
-    margin: 10px 30px 10px 10px;
+    margin: 10px 30px 10px 0px;
     padding: 10px 16px;
     border: solid 1px rgb(255, 180, 0);
     border-radius: 25px;
 }
+leyend{
+    color: red;
+    font-size: 16px;
+    font-family:"Roboto Flex", sans-serif;
+}
+fieldset{
+    
+    background-color: white;
+}
+.radio{
+    width:auto;
+}
 textarea{
+    margin-top: 5px;
+    font-family:"Roboto Flex", sans-serif;
     width: 100%;
+    border: solid 1px rgb(255, 180, 0);
 }
 .form-buttons{
     text-align: center;
