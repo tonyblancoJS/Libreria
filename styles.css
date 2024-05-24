@@ -208,7 +208,7 @@ button:hover{
     list-style-type: none;
     gap: 15px;
 }
-.main-contacto-maps{
+.container-maps{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -216,20 +216,24 @@ button:hover{
     text-align: left;
     font-size: 25px;
     color:rgb(156, 71, 71);
-    gap: 50px;
 }
 .maps{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 800px;
-    height: 225px;
-    margin: 50px;
-    gap: 150px;
+    align-items: center;
+    margin: 30px;
+    padding: 20px;
+    gap: 30px;
 }
-.maps-detalle, #detalle{
-    width: 400px;
-    align-content: center;
+.maps:hover{
+    background-color: rgb(224, 223, 223);
+    opacity: .9;
+    border-radius: 10px;
+}
+#detalle{
+    margin: 30px;
+    font-size: 20px;
 }
 
 .biblioteca{
@@ -284,6 +288,9 @@ button:hover{
 @media screen and (max-width:760px){
     .books-grid{
         grid-template-columns: repeat(1,1fr);
+    }
+    .maps{
+        flex-direction: column;
     }
 }
 
