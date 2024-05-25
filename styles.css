@@ -237,7 +237,7 @@ button:hover{
 }
 
 .biblioteca{
-    width: 95%;
+    width: 80%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
